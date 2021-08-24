@@ -1,9 +1,26 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>cadastra-contatos</ion-title>
+    <ion-buttons slot="start">
+      <ion-button (click)="irParaContatos()">
+        <ion-icon name="arrow-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+  <ion-input type="text" 
+             placeholder="Nome">
+  </ion-input>
+  <ion-input type="text" 
+             placeholder="E-mail">
+  </ion-input>
+  <ion-input type="text" 
+             placeholder="Telefone">
+  </ion-input>
+  <ion-button>Ok</ion-button>
+
 
 </ion-content>

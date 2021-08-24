@@ -1,6 +1,12 @@
 <ion-header>
   <ion-toolbar>
     <ion-title>tarefas</ion-title>
+    <ion-buttons slot="start">
+      <ion-button (click)="irParaHome()">
+        <ion-icon name="arrow-back"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+
     <ion-buttons slot="end">
       <ion-button (click)="irParaForm()">
         <ion-icon name="add-outline"></ion-icon>

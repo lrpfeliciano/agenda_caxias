@@ -18,6 +18,9 @@ export class CadastraTarefasPage implements OnInit {
   ngOnInit() {
   }
 
+  irParaTarefas(){
+    this.nav.navigateForward('tarefas');
+  }
   cadastrar() {
     let tarefa = {};
     tarefa["nome"] = this.nome;

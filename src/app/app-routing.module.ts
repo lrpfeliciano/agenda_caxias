@@ -27,6 +27,18 @@ const routes: Routes = [
     path: 'cadastra-contatos',
     loadChildren: () => import('./paginas/cadastra-contatos/cadastra-contatos.module').then( m => m.CadastraContatosPageModule)
   },
+  {
+    path: 'login',
+    loadChildren: () => import('./paginas/login/login.module').then( m => m.LoginPageModule)
+  },
+  {
+    path: 'registro',
+    loadChildren: () => import('./paginas/registro/registro.module').then( m => m.RegistroPageModule)
+  },
+  {
+    path: 'inicio',
+    loadChildren: () => import('./paginas/inicio/inicio.module').then( m => m.InicioPageModule)
+  },
 ];
 
 @NgModule({

@@ -13,6 +13,9 @@ export class TarefasPage implements OnInit {
   ngOnInit() {
   }
 
+  irParaHome(){
+    this.nav.navigateForward('home');
+  }
   irParaForm(){
     console.log("função irParaContatos acionada..."); 
     this.nav.navigateForward('cadastra-tarefas');  
