@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { NavController } from '@ionic/angular';
+import { TarefasService } from '../../servicos/tarefas.service';
+
 
 @Component({
   selector: 'app-cadastra-tarefas',
@@ -6,10 +9,21 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./cadastra-tarefas.page.scss'],
 })
 export class CadastraTarefasPage implements OnInit {
+  nome: string;
+  descricao: string;
 
-  constructor() { }
+  constructor(private nav: NavController ,
+              private servico: TarefasService) { }
 
   ngOnInit() {
   }
 
+  cadastrar() {
+    let tarefa = {};
+    tarefa["nome"] = this.nome;
+    tarefa["descricao"] = this.descricao;
+    
+    console.log(tarefa);
+    this.servico.incluir(tarefa);
+  }
 }

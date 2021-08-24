@@ -5,7 +5,11 @@
 </ion-header>
 
 <ion-content>
-  <ion-input type="text" placeholder="Nome"></ion-input>
-  <ion-textarea placeholder="Descrição"></ion-textarea>
-  <ion-button>Ok</ion-button>
+  <ion-input type="text" 
+             [(ngModel)]="nome" 
+             placeholder="Nome">
+  </ion-input>
+  <ion-textarea [(ngModel)]="descricao" 
+                placeholder="Descrição"></ion-textarea>
+  <ion-button (click)="cadastrar()">Ok</ion-button>
 </ion-content>
